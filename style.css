@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+    font-family: 'Open Sans', sans-serif;
+
+    background-image: url('./1.jpg'); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+}
+
+.app {
+    background-color: #000000d0;
+    color: #fff;
+    padding: 4rem;
+    transform: translateY(-25%);
+    border-radius: 2rem;
+    width: 100%;
+    max-width: 42rem;
+    margin-top: 15%;
+}
+
+/* Search */
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.search__bar {
+    font-family: inherit;
+    font-size: 1.6rem;
+    color: #fff;
+    background-color: #7c7c7c2b;
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    outline: none;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+
+.search__bar:focus {
+    background-color: #7c7c7c6b;
+}
+
+.search__btn {
+    width: 4.2rem;
+    height: 4.2rem;
+    background-color: #7c7c7c2b;
+    margin-left: 1rem;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.search__btn:hover {
+    background-color: #7c7c7c6b;
+}
+
+.search__btn i {
+    font-size: 2rem;
+    color: #fff;
+    line-height: 4.2rem;
+}
+
+/* Weather */
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather__date {
+    font-size: 1.5rem;
+    color: #e0e0e0;
+    margin-bottom: 1rem;
+}
+
+.weather__city {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.weather__temp {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.weather__icon{
+    margin-bottom: 1.5rem;
+}
+
+.weather__description {
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    color: #e0e0e0;
+    margin-bottom: 1rem;
+}
+
+
+.weather__low-hi {
+    font-size: 2rem;
+    color: #e0e0e0;
+    margin-bottom: 1rem;
+}
+
+.weather__humidity, 
+.weather__wind-speed {
+    font-size: 1.3rem;
+    color: #e0e0e0;
+}
